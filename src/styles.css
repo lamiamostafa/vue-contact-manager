@@ -5,6 +5,37 @@ body {
     background-color: #f0fdf0 !important;
 }
 
+.hero {
+    margin: 5rem 0;
+}
+
+.text-label,
+.text-hero-bold,
+.text-hero-regular {
+    margin: 24px 0;
+}
+
+
+.text-label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+.text-hero-bold {
+    color: #341413;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+}
+
+.text-hero-regular {
+    color: gray;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 31px;
+}
+
 .contact-img {
     width: 150px;
     border-radius: 50%;

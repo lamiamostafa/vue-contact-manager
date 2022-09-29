@@ -2,7 +2,7 @@
     <div class="container mt-3">
         <div class="row">
             <div class="col">
-                <p class="h3 text-success fw-bold"> Contact Manager
+                <p class="h3 text-success fw-bold"> Contact Organizer
                     <router-link to="/contacts/add" class="btn btn-success btn-sm"> <i class="fa fa-plus-circle "></i>
                         New
                     </router-link>

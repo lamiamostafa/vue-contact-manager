@@ -10,7 +10,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    redirect: "/contacts",
+    // redirect: "/home",
     component: HomeView
   },
   {
