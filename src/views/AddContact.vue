@@ -12,31 +12,33 @@
             <div class="col-md-4">
                 <form @submit.prevent="submitCreate()">
                     <div class="mb-2">
-                        <input v-model="contact.name" type="text" class="form-control" placeholder="Name" name="" id="">
+                        <input required v-model="contact.name" type="text" class="form-control" placeholder="Name"
+                            name="" id="">
                     </div>
                     <div class="mb-2">
-                        <input v-model="contact.photo" type="text" class="form-control" placeholder="Photo URL" name=""
-                            id="">
+                        <input required v-model="contact.photo" type="text" class="form-control" placeholder="Photo URL"
+                            name="" id="">
                     </div>
                     <div class="mb-2">
-                        <input v-model="contact.email" type="email" class="form-control" placeholder="Email" name=""
-                            id="">
+                        <input required v-model="contact.email" type="email" class="form-control" placeholder="Email"
+                            name="" id="">
                     </div>
                     <div class="mb-2">
-                        <input v-model="contact.mobile" type="number" class="form-control" placeholder="Mobile" name=""
-                            id="">
+                        <input required v-model="contact.mobile" type="number" class="form-control" placeholder="Mobile"
+                            name="" id="">
                     </div>
 
                     <div class="mb-2">
-                        <input v-model="contact.company" type="text" class="form-control" placeholder="Company" name=""
-                            id="">
+                        <input required v-model="contact.company" type="text" class="form-control" placeholder="Company"
+                            name="" id="">
                     </div>
                     <div class="mb-2">
-                        <input v-model="contact.title" type="text" class="form-control" placeholder="Title" name=""
-                            id="">
+                        <input required v-model="contact.title" type="text" class="form-control" placeholder="Title"
+                            name="" id="">
                     </div>
                     <div class="mb-2">
-                        <select v-model="contact.groupId" name="" class="form-control" id="" v-if="groups.length>0">
+                        <select required v-model="contact.groupId" name="" class="form-control" id=""
+                            v-if="groups.length>0">
                             <option value="">Select Group</option>
                             <option :value="group.id" v-for="group of groups" :key="group.id">{{group.name}}</option>
                         </select>
