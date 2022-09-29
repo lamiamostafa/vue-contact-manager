@@ -57,8 +57,6 @@
             </div>
         </div>
     </div>
-    <pre>{{contact}}</pre>
-    <pre>{{group}}</pre>
 
 
 </template>
