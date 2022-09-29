@@ -16,7 +16,13 @@
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Search Name">
+                                    <input type="text" class="form-control" placeholder="Search Name" />
+                                    <!-- <div v-for="contact in filteredContacts" :key="contact">
+                                        <contact :contact="contact"></contact>
+
+                                    </div> -->
+
+
                                 </div>
                                 <div class="col">
                                     <input type="submit" class="btn btn-outline-dark">
@@ -102,10 +108,38 @@ export default {
     data: function () {
         return {
             loading: false,
+            // search: '',
             contacts: [],
             errorMessage: null
 
 
+        }
+    },
+    // computed: {
+    //     filteredContacts() {
+    //         return this.contacts.filter(contacts => contacts.body.includes(this.search))
+
+    //     }
+    // },
+    computed: {
+        groupedContacts: function () {
+            var groups = {};
+
+            //Loops every contact
+            this.contacts.forEach(function (contact) {
+                //Gets the contact's first char in the contact's name
+                var firstLetter = contact.name.charAt(0);
+                //Checks if the 'groups' object contains the key for the contact's first letter
+                if (!groups[firstLetter]) {
+                    //If it doesn't, creates it as an empty array.
+                    groups[firstLetter] = [];
+                }
+
+                var entry = groups[firstLetter];
+                //Adds the contact to the group
+                entry.push(contact);
+            });
+            return groups;
         }
     },
 
