@@ -50,7 +50,7 @@
                             <input type="submit" class="btn btn-success" value="Update">
                         </div>
                         <div class="mb-2">
-                            <input type="submit" class="btn btn-success" value="Clear">
+                            <input type="submit" class="btn btn-success" @click="resetForm()" value="Clear">
                         </div>
                     </div>
 

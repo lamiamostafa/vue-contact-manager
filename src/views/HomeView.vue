@@ -14,8 +14,8 @@
               There are so many variations passages of management Your mindset about business in your company or agency.
 
             </div>
-            <div class="cta">
-              <a href="" class="btn btn-success">Explore now</a>
+            <div class="hero-button">
+              <a href="" class="btn btn-success ">Explore now</a>
             </div>
           </div>
 

@@ -52,7 +52,7 @@
         </div>
         <div class="row mt-3">
             <div class="col">
-                <router-link to="/" class="btn btn-success"> <i class="fa fa-arrow-alt-circle-left"></i> Back
+                <router-link to="/contacts" class="btn btn-success"> <i class="fa fa-arrow-alt-circle-left"></i> Back
                 </router-link>
             </div>
         </div>

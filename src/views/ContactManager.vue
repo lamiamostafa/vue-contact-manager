@@ -7,9 +7,9 @@
                         New
                     </router-link>
                 </p>
-                <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae ex saepe, at
-                    voluptas sequi modi aut
-                    distinctio similique ut.</p>
+                <p class="fst-italic">This is the Contact Organizer List where you can create, edit, update and delete
+                    your
+                    information .</p>
 
                 <form action="">
                     <div class="row">

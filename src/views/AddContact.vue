@@ -10,7 +10,7 @@
     <div class="container mt-3">
         <div class="row">
             <div class="col-md-4">
-                <form @submit.prevent="submitCreate()">
+                <form>
                     <div class="mb-2">
                         <input required v-model="contact.name" type="text" class="form-control" placeholder="Name"
                             name="" id="">
@@ -46,10 +46,10 @@
 
                     <div class="d-flex ">
                         <div class="mb-2 me-3">
-                            <input type="submit" class="btn btn-success" value="Create">
+                            <input @click.prevent="submitCreate()" type="submit" class="btn btn-success" value="Create">
                         </div>
                         <div class="mb-2">
-                            <input type="submit" class="btn btn-success" value="Clear">
+                            <input type="submit" class="btn btn-success" @click="resetForm()" value="Clear">
                         </div>
                     </div>
 
@@ -57,6 +57,12 @@
             </div>
             <div class="col-md-4">
                 <img :src="contact.photo" alt="" class="contact-img">
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <router-link to="/" class="btn btn-success"> <i class="fa fa-arrow-alt-circle-left"></i> Go Back
+                    </router-link>
+                </div>
             </div>
         </div>
 
